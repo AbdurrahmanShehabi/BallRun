@@ -1,0 +1,148 @@
+[gd_scene load_steps=21 format=1]
+
+[ext_resource path="res://LevelSelect.gd" type="Script" id=1]
+[ext_resource path="res://Pictures/newlevelpage/levelpage-demo.png" type="Texture" id=2]
+[ext_resource path="res://Pictures/newlevelpage/level1.png" type="Texture" id=3]
+[ext_resource path="res://Pictures/newlevelpage/level1-ball.png" type="Texture" id=4]
+[ext_resource path="res://level1button.gd" type="Script" id=5]
+[ext_resource path="res://Pictures/newlevelpage/level2.png" type="Texture" id=6]
+[ext_resource path="res://Pictures/newlevelpage/level2-ball.png" type="Texture" id=7]
+[ext_resource path="res://level2button.gd" type="Script" id=8]
+[ext_resource path="res://Pictures/newlevelpage/level3.png" type="Texture" id=9]
+[ext_resource path="res://Pictures/newlevelpage/level3-ball.png" type="Texture" id=10]
+[ext_resource path="res://level3button.gd" type="Script" id=11]
+[ext_resource path="res://Pictures/newlevelpage/level4.png" type="Texture" id=12]
+[ext_resource path="res://Pictures/newlevelpage/level4-ball.png" type="Texture" id=13]
+[ext_resource path="res://level4button.gd" type="Script" id=14]
+[ext_resource path="res://Pictures/newlevelpage/level5.png" type="Texture" id=15]
+[ext_resource path="res://Pictures/newlevelpage/level5-ball.png" type="Texture" id=16]
+[ext_resource path="res://level5button.gd" type="Script" id=17]
+[ext_resource path="res://Pictures/back-button.png" type="Texture" id=18]
+[ext_resource path="res://Pictures/backball-button.png" type="Texture" id=19]
+[ext_resource path="res://backbutton.gd" type="Script" id=20]
+
+[node name="Node" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="levelpage-demo" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1238.18, 720.034 )
+transform/scale = Vector2( 1.652, 1.65534 )
+texture = ExtResource( 2 )
+
+[node name="level1button" type="TextureButton" parent="levelpage-demo"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -299.0
+margin/top = -52.0
+margin/right = -6.0
+margin/bottom = 7.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+textures/hover = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+
+[node name="level2button" type="TextureButton" parent="levelpage-demo"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 53.0
+margin/top = -53.0
+margin/right = 348.0
+margin/bottom = 7.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 6 )
+textures/hover = ExtResource( 7 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 8 )
+
+[node name="level3button" type="TextureButton" parent="levelpage-demo"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -299.0
+margin/top = 52.0
+margin/right = -5.0
+margin/bottom = 113.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 9 )
+textures/hover = ExtResource( 10 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 11 )
+
+[node name="level4button" type="TextureButton" parent="levelpage-demo"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 53.0
+margin/top = 53.0
+margin/right = 347.0
+margin/bottom = 114.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 12 )
+textures/hover = ExtResource( 13 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 14 )
+
+[node name="level5button" type="TextureButton" parent="levelpage-demo"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -148.0
+margin/top = 140.0
+margin/right = 147.0
+margin/bottom = 201.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 15 )
+textures/hover = ExtResource( 16 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 17 )
+
+[node name="baclbutton" type="TextureButton" parent="levelpage-demo"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -299.0
+margin/top = 225.0
+margin/right = 349.0
+margin/bottom = 284.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 18 )
+textures/hover = ExtResource( 19 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 20 )
+
+

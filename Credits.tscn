@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://Credits.gd" type="Script" id=1]
+[ext_resource path="res://Pictures/background.png" type="Texture" id=2]
+[ext_resource path="res://Pictures/back-button.png" type="Texture" id=3]
+[ext_resource path="res://Pictures/backball-button.png" type="Texture" id=4]
+[ext_resource path="res://creditsbackbutton.gd" type="Script" id=5]
+
+[node name="Node" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1277.42, 711.781 )
+transform/scale = Vector2( 1.62101, 1.62101 )
+texture = ExtResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="Sprite"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -305.0
+margin/top = 122.0
+margin/right = 341.0
+margin/bottom = 181.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+textures/hover = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Sprite"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -468.0
+margin/top = -147.0
+margin/right = 480.0
+margin/bottom = 35.0
+custom_colors/font_color = Color( 0.0909398, 0.0731506, 0.398438, 1 )
+text = "Artist: Bryan Mira
+
+Programmer: Abdurrahman Al-Shehabi
+
+Level Designer: Bryan Mira & Abdurrahman Al-Shehabi
+
+Music: 8-bit-Arcade4 produced by DL Sounds
+Sound Effects: Jumping Sound by Mike Koenig from soundbible.com "
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
